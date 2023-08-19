@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script> <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@100&display=swap" rel="stylesheet">
+</head>
+<style>
+   *{
+    font-family: 'Noto Serif Display', serif;
+   }
+</style>
+
+<body class="bg-green-200">
+  
+<div>
+    <form class="flex flex-col w-1/2 mx-auto my-[350px] gap-2" action="">
+        <H1 class="text-3xl text-center text-black font-bold">Form Login Tryout App</H1>
+        <input class="username p-2 rounded-md" type="text" placeholder="Username">
+        <input class="password p-2 rounded-md" type="password" name="" id="" placeholder="Password">
+        <button class="btn bg-green-500 p-2 mx-auto w-24 rounded-lg hover:bg-green-600 hover:text-green-300 hover:shadow-md ">
+            <a href="soal.html">Login</a>
+        </button>
+
+    </form>
+
+</div>
+
+    <script>
+
+        const username = document.querySelector('.username')
+        const password = document.querySelector('.password')
+        const btn = document.querySelector('button')
+        
+        let x = 0
+        btn.addEventListener('click', function(e){
+            e.preventDefault()
+            console.log(username.valur);
+            console.log(password.value);
+            
+            if (username.value == "hallo") {
+                if(password.value == "123"){
+                    alert('Login Berhasil')
+                    location.href = 'soal.html'
+                }else{
+                    alert('Password atau Username kamu salah!')
+                }
+            }else{
+                alert('Password atau Username kamu salah!')
+            }
+        })
+
+    </script>
+
+</body>
+</html>
